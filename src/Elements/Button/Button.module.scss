@@ -1,0 +1,17 @@
+.button {
+    background-color: aqua;
+    padding: 10px 13px;
+    border: none;
+    border-radius: 5px;
+
+    &.brightBlue {
+        background-color: #ABC4FF;
+        color: white
+    }
+
+    &.darkBlue {
+        background-color: #C1D3FE;
+        color: black
+    }
+
+}
