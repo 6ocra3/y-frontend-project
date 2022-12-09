@@ -1,5 +1,4 @@
 .button {
-    background-color: aqua;
     padding: 10px 13px;
     border: none;
     border-radius: 5px;
@@ -11,6 +10,11 @@
 
     &.darkBlue {
         background-color: #C1D3FE;
+        color: black
+    }
+
+    &.ghost {
+        background: none;
         color: black
     }
 
