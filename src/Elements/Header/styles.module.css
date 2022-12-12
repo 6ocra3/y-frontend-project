@@ -1,0 +1,16 @@
+.btn, .active {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #6c757d;
+}
+
+.active {
+    color: #16161A;
+    border-bottom: #16161A 1px solid;
+    font-weight: bolder;
+}
+
+.root {
+    background-color: #E2EAFC;
+    padding: 30px;
+}
