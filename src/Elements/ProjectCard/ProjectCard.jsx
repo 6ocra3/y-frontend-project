@@ -2,24 +2,27 @@ import styles from "./styles.module.css";
 
 
 export function ProjectCard({props}) {
+    const { image, date, time, title, author, projectType, description, technologyStack } = props;
 
     return (
         <div className={styles.root}>
-            <img src={props.image} alt="проект" className={styles.image}/>
+            <img src={image} alt="проект" className={styles.image}/>
 
             <div className={styles.date}>
-                {props.time} {props.date}
+                {time} {date}
             </div>
 
-            <h1 className={styles.title}>{props.title}</h1>
+            <h1 className={styles.title}>{title}</h1>
 
             <div className={styles.project}>
-                {props.author} • {props.projectType}
+                {author} • {projectType}
             </div>
 
-            <p className={styles.description}>{props.description}</p>
+            <p className={styles.description}>{description}</p>
 
-            <p className={styles.muted}>{props.technologyStack}</p>
+            <p className={styles.muted}>{
+                technologyStack.map((el) => el !== technologyStack[technologyStack.length - 1] ? `${el}, ` : el)
+            }</p>
         </div>
     )
 }
