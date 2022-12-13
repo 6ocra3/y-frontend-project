@@ -1,4 +1,4 @@
-.root {
+.footer {
     background-color: #E2EAFC;
     padding: 35px;
     bottom: 0;
@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-.muted {
+.footer__muted {
     color: #6c757d;
     font-weight: lighter;
 }
