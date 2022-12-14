@@ -9,6 +9,6 @@ export function Button(props) {
     }
     const elemStyles = modificateStyles ? modificateStyles.concat([s.button, type && styles[type]]) : [s.button, type && styles[type]]
     return (
-        <button className={testStyles.join(" ")} onClick={onClick} disabled={disable || false} {...restProps}>{children}</button>
+        <button className={elemStyles.join(" ")} onClick={onClick} disabled={disable || false} {...restProps}>{children}</button>
     )
 }
