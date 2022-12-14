@@ -6,9 +6,11 @@ export const FeedbackForm = () => {
 
     return (
         <form className={styles.form}>
-            <button className={styles.form__close}>
-                <FeatherIcon icon="x"/>
-            </button>
+            <div className={styles.form__close}>
+                <Button type="ghost">
+                    <FeatherIcon icon="x"/>
+                </Button>
+            </div>
 
             <h2>Форма для связи с нами</h2>
 
