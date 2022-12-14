@@ -2,10 +2,10 @@ import styles from "./styles.module.css";
 
 
 export function ProjectCard({props}) {
-    const { image, date, time, title, author, projectType, description, technologyStack } = props;
+    const { image, date, time, title, author, projectType, description, technologyStack, link } = props;
 
     return (
-        <div className={styles.root}>
+        <a className={link ? styles.root : styles.root + " " + styles["root-disabled"]} href={link} target="_blank" rel="noreferrer">
             <img src={image} alt="проект" className={styles.image}/>
 
             <div className={styles.date}>
@@ -23,7 +23,7 @@ export function ProjectCard({props}) {
             <p className={styles.muted}>{
                 technologyStack.map((el) => el !== technologyStack[technologyStack.length - 1] ? `${el}, ` : el)
             }</p>
-        </div>
+        </a>
     )
 }
 
