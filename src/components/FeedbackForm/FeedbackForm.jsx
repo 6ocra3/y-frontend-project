@@ -1,37 +1,39 @@
 import styles from "./styles.module.css";
-import closeImage from "../../static/image/close.png";
+import FeatherIcon from 'feather-icons-react';
+import {Button} from "../../Elements/Button";
 
 export const FeedbackForm = () => {
 
     return (
         <form className={styles.form}>
             <button className={styles.form__close}>
-                <img src={closeImage} alt="Закрыть" className={styles["form__close-img"]}/>
+                <FeatherIcon icon="x"/>
             </button>
 
-            <h2 className={styles.form__title}>Форма для связи с нами</h2>
+            <h2>Форма для связи с нами</h2>
 
             <div className={styles.form__row}>
-                <p className={styles.form__text}>Как вас зовут</p>
-                <input type="text" className={styles.form__input} required/>
+                <label className={styles.form__text} htmlFor="name">Как вас зовут</label>
+                <input type="text" className={styles.form__input} required id="name"/>
             </div>
 
             <div className={styles.form__row}>
-                <p className={styles.form__text}>Ваш Email</p>
-                <input type="email" className={styles.form__input} required/>
+                <label className={styles.form__text} htmlFor="email">Ваш Email</label>
+                <input type="email" className={styles.form__input} required id="email"/>
             </div>
 
-            <div className={styles.form__row}>
-                <p>Ваше сообщение</p>
+            <label className={styles.form__row}>
+                Ваше сообщение
                 <textarea className={styles.form__textarea} required></textarea>
-            </div>
+            </label>
 
-            <p className={styles.form__agreement}>
+
+            <label className={styles.form__agreement}>
                 <input type="checkbox" className={styles.form__checkbox} required/>
-                <p>Даю согласие на обработку персональных данных</p>
-            </p>
+                Даю согласие на обработку персональных данных
+            </label>
 
-            <button className={styles.form__submit}>Отправить</button>
+            <Button type="dark">Отправить</Button>
         </form>
     )
 }

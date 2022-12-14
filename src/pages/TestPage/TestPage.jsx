@@ -1,4 +1,4 @@
-import {FeedbackForm} from "../../components/FeedbackForm/FeedbackForm";
+import {FeedbackForm} from "../../components/FeedbackForm";
 import styles from "./styles.module.css";
 
 export const TestPage = () => {

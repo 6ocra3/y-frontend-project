@@ -32,6 +32,7 @@
     border: 1px solid #D2D3D9;
     width: 70%;
     margin-left: auto;
+    font-size: 1.2em;
 }
 
 .form__input:focus-visible, .form__textarea:focus-visible {
@@ -44,6 +45,7 @@
     padding: 5px 0;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 20px;
     gap: 10px;
 }
 
@@ -74,8 +76,8 @@
 }
 
 .form__close-img {
-    height: 24px;
-    width: 24px;
+    height: 1em;
+    width: 1em;
 }
 
 
