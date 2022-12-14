@@ -5,8 +5,12 @@ export function ProjectCard({props}) {
     const { image, date, time, title, author, projectType, description, technologyStack, link } = props;
 
     return (
-        <a className={link ? styles.root : styles.root + " " + styles["root-disabled"]} href={link} target="_blank" rel="noreferrer">
-            <img src={image} alt="проект" className={styles.image}/>
+        <div className={styles.root} >
+            <a href={link} target="_blank" rel="noreferrer"
+               className={link ? "" : styles.disabled}>
+
+                <img src={image} alt="проект" className={styles.image}/>
+            </a>
 
             <div className={styles.date}>
                 {time} {date}
@@ -23,7 +27,7 @@ export function ProjectCard({props}) {
             <p className={styles.muted}>{
                 technologyStack.map((el) => el !== technologyStack[technologyStack.length - 1] ? `${el}, ` : el)
             }</p>
-        </a>
+        </div>
     )
 }
 
