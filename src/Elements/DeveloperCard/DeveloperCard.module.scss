@@ -14,8 +14,10 @@
 }
 
 .developer__img {
-  max-width: 300px;
+  width: 300px;
+  max-height: 300px;
   border-radius: 8px 8px 0px 0px;
+  margin: 0px 0px 8px 0px;
 }
 
 .developer__contacts {
@@ -25,6 +27,11 @@
   flex-wrap: nowrap;
   max-width: 300px;
   font-size: 20px;
+}
+
+.contacts__name {
+  font-size: 20px;
+  font-weight: normal;
 }
 
 .developer__bio {
