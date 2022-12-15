@@ -2,12 +2,12 @@ import styles from "./styles.module.css";
 import FeatherIcon from 'feather-icons-react';
 import {Button} from "../../Elements/Button";
 
-export const FeedbackForm = () => {
+export const FeedbackForm = ({setActive}) => {
 
     return (
-        <form className={styles.form}>
+        <form className={styles.form} onClick={e => e.stopPropagation()}>
             <div className={styles.form__close}>
-                <Button type="ghost">
+                <Button type="ghost" onClick={() => setActive(false)}>
                     <FeatherIcon icon="x"/>
                 </Button>
             </div>
