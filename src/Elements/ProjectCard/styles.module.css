@@ -19,10 +19,23 @@
     align-content: center;
 }
 
+.stackList {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
 .muted {
     color: #6c757d;
-    font-weight: lighter;
+    padding: 0.35rem;
+    font-weight: normal;
     font-size: x-small;
+
+}
+
+.muted:first-child {
+    padding-left: 0;
 }
 
 .project {

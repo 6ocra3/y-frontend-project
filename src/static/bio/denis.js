@@ -1,6 +1,7 @@
 import denisImage from './../image/denis.png';
 
 export const DENIS = {
+  id: 11,
   image: denisImage,
   name: 'Шерстнев Денис',
   github: 'https://github.com/sherstnew',
