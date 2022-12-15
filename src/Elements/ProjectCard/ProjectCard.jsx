@@ -2,11 +2,15 @@ import styles from "./styles.module.css";
 
 
 export function ProjectCard({props}) {
-    const { image, date, time, title, author, projectType, description, technologyStack } = props;
+    const { image, date, time, title, author, projectType, description, technologyStack, link } = props;
 
     return (
-        <div className={styles.root}>
-            <img src={image} alt="проект" className={styles.image}/>
+        <div className={styles.root} >
+            <a href={link} target="_blank" rel="noreferrer"
+               className={link ? "" : styles.disabled}>
+
+                <img src={image} alt="проект" className={styles.image}/>
+            </a>
 
             <div className={styles.date}>
                 {time} {date}
