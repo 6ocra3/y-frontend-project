@@ -1,33 +1,32 @@
 import styles from "./styles.module.css";
 
 
-export function ProjectCard({props}) {
+export function ProjectCard({ props }) {
     const { image, date, time, title, author, projectType, description, technologyStack, link } = props;
 
     return (
-        <div className={styles.root} >
+        <section className={styles.root} >
             <a href={link} target="_blank" rel="noreferrer"
-               className={link ? "" : styles.disabled}>
+                className={link ? "" : styles.disabled}>
 
-                <img src={image} alt="проект" className={styles.image}/>
+                <img src={image} alt="проект" className={styles.image} />
             </a>
 
             <div className={styles.date}>
                 {time} {date}
             </div>
 
-            <h1 className={styles.title}>{title}</h1>
+            <h2 className={styles.title}>{title}</h2>
 
             <div className={styles.project}>
-                {author} • {projectType}
+                {author.name} • {projectType}
             </div>
 
-            <p className={styles.description}>{description}</p>
-
-            <p className={styles.muted}>{
-                technologyStack.map((el) => el !== technologyStack[technologyStack.length - 1] ? `${el}, ` : el)
-            }</p>
-        </div>
+            <article className={styles.description}>{description}</article>
+            <ul className={styles.stackList}>
+                {technologyStack.map((el) => <li className={styles.muted} key={el.id}>{el.name}</li>)}
+            </ul>
+        </section>
     )
 }
 
