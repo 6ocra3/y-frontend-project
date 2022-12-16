@@ -6,4 +6,9 @@ export const STACK = {
   SCSS: { id: 5, name: 'SCSS' },
   TS: { id: 6, name: 'TypeScript' },
   REDUX: { id: 7, name: 'Redux' },
+  PYTHON: {id: 8, name: 'Python'},
+  FLASK: {id: 9, name: 'Flask'},
+  PYGAME: {id: 10, name: 'Pygame'},
+  PyQt: {id: 11, name: 'PyQt'},
+  BOOTSTRAP: {id: 12, name: "BootStrap"}
 };
