@@ -3,6 +3,7 @@ import FeatherIcon from 'feather-icons-react';
 import {Button} from "../../Elements/Button";
 
 export const FeedbackForm = ({setActive}) => {
+    const emailPattern = "^[^\\s@]+@([^\\s@.,]+\\.)+[^\\s@.,]{2,}$";
 
     return (
         <form className={styles.form} onClick={e => e.stopPropagation()}>
@@ -21,7 +22,7 @@ export const FeedbackForm = ({setActive}) => {
 
             <div className={styles.form__row}>
                 <label className={styles.form__text} htmlFor="email">Ваш Email</label>
-                <input type="email" className={styles.form__input} required id="email"/>
+                <input type="email" className={styles.form__input} required id="email" pattern={emailPattern}/>
             </div>
 
             <label className={styles.form__row}>
