@@ -6,4 +6,5 @@ export const STACK = {
   SCSS: { id: 5, name: 'SCSS' },
   TS: { id: 6, name: 'TypeScript' },
   REDUX: { id: 7, name: 'Redux' },
+  NODEJS: { id: 8, name: 'Node JS'},
 };

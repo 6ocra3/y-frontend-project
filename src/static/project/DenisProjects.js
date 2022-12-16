@@ -43,6 +43,6 @@ export const DenisProjects = [
     description:
       'В этом проекте можно ставить лайки учителям и смотреть их рейтинг! Моё первое фуллстак-приложение, между прочим.',
     link: 'https://github.com/sherstnew/rate2083',
-    technologyStack: [STACK.HTML, STACK.CSS],
+    technologyStack: [STACK.HTML, STACK.CSS, STACK.NODEJS],
   },
 ];
