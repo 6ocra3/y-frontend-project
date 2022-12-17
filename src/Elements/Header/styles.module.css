@@ -1,22 +1,20 @@
 .header__button {
     text-decoration: none;
     margin-left: 10px;
-    color: #6c757d;
     transition: 0.3s;
     user-select: none;
 }
 
 .header__button_active {
-    color: #16161A;
-    border-bottom: #16161A 1px solid;
     font-weight: bolder;
 }
 
 .header {
     display: flex;
     align-items: center;
-    background-color: #E2EAFC;
+    background-color: rgba(226, 234, 252, 0);
     padding: 30px;
+
 }
 
 .hidden {
@@ -39,7 +37,6 @@
 .burger__layer {
     width: 100%;
     height: 6px;
-    background: #000;
     border-radius: 10px;
     position: absolute;
     transition: 0.3s;
@@ -86,4 +83,30 @@
     top: 13px;
     width: 0%;
     left: 50%;
+}
+
+@media (prefers-color-scheme: light) {
+    .burger__layer {
+        background-color: #000000;
+    }
+    .header__button {
+        color: #6c757d;
+    }
+    .header__button_active {
+        color: #16161A;
+        border-bottom: #16161A 1px solid;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .burger__layer {
+        background-color: #ffffff;
+    }
+    .header__button {
+        color: #6c757d;
+    }
+    .header__button_active {
+        color: #e7e7e7;
+        border-bottom: #e7e7e7 1px solid;
+    }
 }

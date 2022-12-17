@@ -2,7 +2,6 @@
     width: 40%;
     display: flex;
     flex-direction: column;
-    background: #ffffff;
     padding: 25px;
     border-radius: 2px;
 
@@ -33,6 +32,7 @@
     width: 70%;
     margin-left: auto;
     font-size: 1.2em;
+    border-radius: 5px;
 }
 
 .form__input:focus-visible, .form__textarea:focus-visible {
@@ -84,6 +84,17 @@
 @media (max-width: 1024px) {
     .form {
         width: 80%;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .form {
+        background-color: #ffffff;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .form {
+        background-color: #212530;
     }
 }
 

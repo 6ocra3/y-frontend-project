@@ -1,11 +1,12 @@
 .developers {
   display: flex;
+  justify-content: start;
   flex-wrap: wrap;
   width: 80%;
 }
 .developers__header {
   font-size: 60px;
-  padding: 20px;
+  margin-bottom: 50px;
 }
 .developers__list {
   display: flex;
