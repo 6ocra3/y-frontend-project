@@ -4,13 +4,15 @@ import {Button} from "../../Elements/Button";
 import { useState } from 'react';
 import axios from 'axios';
 
+const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu
+
 export const FeedbackForm = ({setActive}) => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [text, setText] = useState('')
 
     const sendForm = async () => {
-        if (name != '' && email != '' && text != '') {
+        if (name != '' && email != '' && text != '' && EMAIL_REGEXP.test(email)) {
 
             let sendData = {
                 name: '',
