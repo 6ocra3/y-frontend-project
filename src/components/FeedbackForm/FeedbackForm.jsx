@@ -36,7 +36,6 @@ export const FeedbackForm = ({ setActive }) => {
                 });
         };
     };
-
     return (
         <form className={styles.form} onClick={e => e.stopPropagation()} onSubmit={e => e.preventDefault()}>
             <div className={styles.form__close}>

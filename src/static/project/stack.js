@@ -11,5 +11,6 @@ export const STACK = {
   PYGAME: {id: 10, name: 'Pygame'},
   PyQt: {id: 11, name: 'PyQt'},
   BOOTSTRAP: {id: 12, name: "BootStrap"},
-  NODEJS: { id: 13, name: 'Node JS'}
+  NODEJS: { id: 13, name: 'Node JS'},
+  SQLITE: { id: 14, name: "SQLite"}
 };
