@@ -41,4 +41,4 @@ export const VladProjects = [
     link: 'https://github.com/Sneper-Breeze/Rogue',
     technologyStack: [STACK.PYTHON, STACK.PYGAME],
   }
-]
+];
