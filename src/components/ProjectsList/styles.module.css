@@ -1,0 +1,26 @@
+.projects__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.projects {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.projects__element {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+@media (max-width: 1000px) {
+    .projects__element {
+        width: 100%;
+    }
+}

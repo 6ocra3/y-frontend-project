@@ -1,6 +1,6 @@
 import grishaImg from './../image/morozoff.jpg';
 
-export const Grisha = {
+export const GRISHA = {
   id: 12,
   image: grishaImg,
   name: 'Морозов Григорий',
