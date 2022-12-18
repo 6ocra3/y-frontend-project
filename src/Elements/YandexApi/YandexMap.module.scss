@@ -21,12 +21,17 @@ ymaps:not(*[unselectable="on"]) {
 }
 
 .address__point {
-    color: #6b6b6b;
+    color: #7a7a7a;
     transition: 0.3s;
     font-size: 25px;
     cursor: pointer;
     margin-left: 10px;
 }
 .address__point_active {
-    color: #ffffff;
+    @media (prefers-color-scheme: light) {
+        color: #000000;
+    }
+    @media (prefers-color-scheme: dark) {
+        color: #ffffff;
+    }
 }
