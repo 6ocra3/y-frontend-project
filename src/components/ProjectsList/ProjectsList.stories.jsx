@@ -1,6 +1,5 @@
 import { ProjectsList } from "./ProjectsList";
-import {MakarProjects} from "../../static/project/MakarProjects";
-import {GrigoriyProjects} from "../../static/project/GrigoriyProjects";
+import {ProjectsListData} from "../../static/project/ProjectsList";
 
 export default {
     title: 'ProjectsList',
@@ -10,7 +9,7 @@ export default {
 export const StoryProjectsList = () => {
     return (
         <>
-            <ProjectsList projects={[...MakarProjects, ...GrigoriyProjects]}/>
+            <ProjectsList projects={ProjectsListData}/>
         </>
     )
 }

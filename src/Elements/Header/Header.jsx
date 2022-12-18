@@ -33,7 +33,7 @@ export const Header = () => {
                     ({isActive}) => isActive ? styles.header__button + " " + styles.header__button_active:
                         styles.header__button
                 }
-                >Вторая страница</NavLink> : <NavLink to="/2" className={
+                >Вторая страница</NavLink> : <NavLink to="/projects_page" className={
                     ({isActive}) => isActive ? styles.header__button + " " + styles.header__button_active + " " + styles.hidden :
                         styles.header__button + " " + styles.hidden
                 }

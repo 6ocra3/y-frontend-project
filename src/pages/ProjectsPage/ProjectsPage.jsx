@@ -1,13 +1,12 @@
 import {ProjectsList} from "../../components/ProjectsList";
 // import styles from "./styles.module.css";
-import {MakarProjects} from "../../static/project/MakarProjects";
-import {GrigoriyProjects} from "../../static/project/GrigoriyProjects";
+import {ProjectsListData} from "../../static/project/ProjectsList";
 
 export const ProjectsPage = () => {
 
     return (
         <div>
-            <ProjectsList projects={[...MakarProjects, ...GrigoriyProjects]}/>
+            <ProjectsList projects={ProjectsListData}/>
         </div>
     )
 }
