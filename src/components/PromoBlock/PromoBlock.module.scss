@@ -1,0 +1,49 @@
+.promoBlock {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.promoBlock__header {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 60px;
+  max-width: 600px;
+}
+
+.promoBlock__subheader {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.promoBlock__benefits {
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-around;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 400px;
+}
+
+.behefits__benefit {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: 0.2s;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.behefits__benefit_active {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+}

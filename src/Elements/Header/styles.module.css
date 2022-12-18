@@ -14,7 +14,7 @@
     align-items: center;
     background-color: rgba(226, 234, 252, 0);
     padding: 30px;
-
+    position: fixed;
 }
 
 .hidden {

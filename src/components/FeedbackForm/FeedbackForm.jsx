@@ -56,7 +56,7 @@ export const FeedbackForm = ({ setActive }) => {
                 Ваше сообщение
                 <textarea className={styles.form__textarea} value={text} onChange={(e) => setText(e.target.value)} required></textarea>
             </label><label className={styles.form__agreement}>
-                <input type="checkbox" className={styles.form__checkbox} required />
+                <input type="checkbox" className={styles.form__checkbox} required onChange={()=> setCheckbox(!checkbox)} />
 
                 Даю согласие на обработку персональных данных
             </label><Button type="dark" onClick={sendForm}>Отправить</Button>
