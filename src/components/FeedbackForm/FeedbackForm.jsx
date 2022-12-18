@@ -4,17 +4,17 @@ import {Button} from "../../Elements/Button";
 import { Loader } from '../../Elements/Loader/Loader';
 import { useState } from 'react';
 import axios from 'axios';
+const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu
 
-export const FeedbackForm = ({setActive}) => {
-
+export const FeedbackForm = ({ setActive }) => {
     const [loading, setLoading] = useState(false)
-
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [text, setText] = useState('')
+    const [checkbox, setCheckbox] = useState(false)
 
     const sendForm = async () => {
-        if (name != '' && email != '' && text != '') {
+        if (name != '' && email != '' && text != '' && EMAIL_REGEXP.test(email) && checkbox) {
 
             setLoading(true)
 
@@ -40,7 +40,6 @@ export const FeedbackForm = ({setActive}) => {
             });
         };
     };
-
     return (
         loading ? <Loader /> :
         <form className={styles.form} onClick={e => e.stopPropagation()} onSubmit={e => e.preventDefault()}><div className={styles.form__close}>
@@ -58,6 +57,7 @@ export const FeedbackForm = ({setActive}) => {
                 <textarea className={styles.form__textarea} value={text} onChange={(e) => setText(e.target.value)} required></textarea>
             </label><label className={styles.form__agreement}>
                 <input type="checkbox" className={styles.form__checkbox} required />
+
                 Даю согласие на обработку персональных данных
             </label><Button type="dark" onClick={sendForm}>Отправить</Button>
         </form>
