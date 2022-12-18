@@ -7,7 +7,8 @@ export function Button(props) {
         "dark": s.darkBlue,
         "ghost": s.ghost,
     }
+    const elemStyles = modificateStyles ? modificateStyles.concat([s.button, type && styles[type]]) : [s.button, type && styles[type]]
     return (
-        <button className={[s.button, type && styles[type], modificateStyles && modificateStyles].join(" ")} onClick={onClick} disabled={disable || false} {...restProps}>{children}</button>
+        <button className={elemStyles.join(" ")} onClick={onClick} disabled={disable || false} {...restProps}>{children}</button>
     )
 }

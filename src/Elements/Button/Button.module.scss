@@ -1,7 +1,10 @@
 .button {
-    padding: 10px 13px;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 18px;
+    font-size: 20px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 
     &.brightBlue {
         background-color: #ABC4FF;
@@ -9,13 +12,37 @@
     }
 
     &.darkBlue {
-        background-color: #C1D3FE;
-        color: black
+        transition: 0.2s;
+        @media (prefers-color-scheme: light) {
+            background-color: #1C2432;
+            color: #ffffff;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0);
+                color: #000000;
+                transition: 0.2s;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            background-color: #ffffff;
+            color: #1C2432;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0);
+                color: #ffffff;
+                transition: 0.2s;
+            }
+        }
     }
 
     &.ghost {
         background: none;
-        color: black
+        @media (prefers-color-scheme: light) {
+            color: #1C2432;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            color: #ffffff;
+        }
     }
 
 }

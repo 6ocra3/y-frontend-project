@@ -1,0 +1,60 @@
+.root {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.date {
+    margin-top: 10px;
+    display: flex;
+    /*height: 20px;*/
+    font-size: x-small;
+    align-content: center;
+}
+
+.stackList {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.muted {
+    color: #6c757d;
+    padding: 0.35rem;
+    font-weight: normal;
+    font-size: x-small;
+
+}
+
+.muted:first-child {
+    padding-left: 0;
+}
+
+.project {
+    display: flex;
+    color: #16161A;
+}
+
+.image {
+    width: min(616px, 100%);
+    height: min(440px, 71%);
+}
+
+.description {
+    color: #4B4C52;
+    text-align: justify;
+}
+
+.title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}

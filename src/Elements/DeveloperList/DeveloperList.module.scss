@@ -1,0 +1,17 @@
+.developers {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.developers__header {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+.developers__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  list-style-type: none;
+}

@@ -1,0 +1,112 @@
+.header__button {
+    text-decoration: none;
+    margin-left: 10px;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.header__button_active {
+    font-weight: bolder;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgba(226, 234, 252, 0);
+    padding: 30px;
+
+}
+
+.hidden {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.header__burger {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.header__burger_open {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.burger__layer {
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    position: absolute;
+    transition: 0.3s;
+    left: 0px;
+}
+
+.burger__layer:nth-child(1) {
+    top: 0px;
+}
+
+.burger__layer:nth-child(2) {
+    top: 13px;
+}
+
+.burger__layer:nth-child(3) {
+    top: 13px;
+}
+
+.burger__layer:nth-child(4) {
+    top: 26px;
+}
+
+.header__burger_open .burger__layer:nth-child(1) {
+    top: 13px;
+    width: 0%;
+    left: 50%;
+}
+
+.header__burger_open .burger__layer:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.header__burger_open .burger__layer:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.header__burger_open .burger__layer:nth-child(4) {
+    top: 13px;
+    width: 0%;
+    left: 50%;
+}
+
+@media (prefers-color-scheme: light) {
+    .burger__layer {
+        background-color: #000000;
+    }
+    .header__button {
+        color: #6c757d;
+    }
+    .header__button_active {
+        color: #16161A;
+        border-bottom: #16161A 1px solid;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .burger__layer {
+        background-color: #ffffff;
+    }
+    .header__button {
+        color: #6c757d;
+    }
+    .header__button_active {
+        color: #e7e7e7;
+        border-bottom: #e7e7e7 1px solid;
+    }
+}
