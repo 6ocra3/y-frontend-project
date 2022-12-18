@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 import FeatherIcon from 'feather-icons-react';
-import {Button} from "../../Elements/Button";
+import { Button } from "../../Elements/Button";
 import { Loader } from '../../Elements/Loader/Loader';
 import { useState } from 'react';
 import axios from 'axios';
@@ -29,15 +29,15 @@ export const FeedbackForm = ({ setActive }) => {
             sendData.text = await text;
 
             axios.post('http://localhost:7700/form', sendData)
-            .then(function (response) {
-                console.log(response);
-                setLoading(false)
-                setActive(false);
-            })
-            .catch(function (error) {
-                console.log(error);
-                setActive(false);
-            });
+                .then(function (response) {
+                    console.log(response);
+                    setLoading(false)
+                    setActive(false);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                    setActive(false);
+                });
         };
     };
     return (
@@ -57,9 +57,8 @@ export const FeedbackForm = ({ setActive }) => {
                 <textarea className={styles.form__textarea} value={text} onChange={(e) => setText(e.target.value)} required></textarea>
             </label><label className={styles.form__agreement}>
                 <input type="checkbox" className={styles.form__checkbox} required onChange={()=> setCheckbox(!checkbox)} />
-
-                Даю согласие на обработку персональных данных
-            </label><Button type="dark" onClick={sendForm}>Отправить</Button>
-        </form>
+                    Даю согласие на обработку персональных данных
+                </label><Button type="dark" onClick={sendForm}>Отправить</Button>
+            </form>
     )
 };
