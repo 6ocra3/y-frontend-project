@@ -42,22 +42,21 @@ export const FeedbackForm = ({ setActive }) => {
     };
     return (
         loading ? <Loader /> :
-            <form className={styles.form} onClick={e => e.stopPropagation()} onSubmit={e => e.preventDefault()}><div className={styles.form__close}>
-                <Button type="ghost" onClick={() => setActive(false)}>
-                    <FeatherIcon icon="x" />
-                </Button>
-            </div><h2>Форма для связи с нами</h2><div className={styles.form__row}>
-                    <label className={styles.form__text} htmlFor="name">Как вас зовут</label>
-                    <input type="text" className={styles.form__input} value={name} onChange={(e) => setName(e.target.value)} required id="name" />
-                </div><div className={styles.form__row}>
-                    <label className={styles.form__text} htmlFor="email">Ваш Email</label>
-                    <input type="email" className={styles.form__input} value={email} onChange={(e) => setEmail(e.target.value)} required id="email" />
-                </div><label className={styles.form__row}>
-                    Ваше сообщение
-                    <textarea className={styles.form__textarea} value={text} onChange={(e) => setText(e.target.value)} required></textarea>
-                </label><label className={styles.form__agreement}>
-                    <input type="checkbox" onChange={() => setCheckbox(!checkbox)} className={styles.form__checkbox} required />
-
+        <form className={styles.form} onClick={e => e.stopPropagation()} onSubmit={e => e.preventDefault()}><div className={styles.form__close}>
+            <Button type="ghost" onClick={() => setActive(false)}>
+                <FeatherIcon icon="x" />
+            </Button>
+        </div><h2>Форма для связи с нами</h2><div className={styles.form__row}>
+                <label className={styles.form__text} htmlFor="name">Как вас зовут</label>
+                <input type="text" className={styles.form__input} value={name} onChange={(e) => setName(e.target.value)} required id="name" />
+            </div><div className={styles.form__row}>
+                <label className={styles.form__text} htmlFor="email">Ваш Email</label>
+                <input type="email" className={styles.form__input} value={email} onChange={(e) => setEmail(e.target.value)} required id="email" />
+            </div><label className={styles.form__row}>
+                Ваше сообщение
+                <textarea className={styles.form__textarea} value={text} onChange={(e) => setText(e.target.value)} required></textarea>
+            </label><label className={styles.form__agreement}>
+                <input type="checkbox" className={styles.form__checkbox} required onChange={()=> setCheckbox(!checkbox)} />
                     Даю согласие на обработку персональных данных
                 </label><Button type="dark" onClick={sendForm}>Отправить</Button>
             </form>
