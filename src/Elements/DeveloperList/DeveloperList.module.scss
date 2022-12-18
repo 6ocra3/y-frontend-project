@@ -1,16 +1,21 @@
 .developers {
   display: flex;
+  justify-content: start;
   flex-wrap: wrap;
   width: 80%;
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
 }
 .developers__header {
   font-size: 60px;
-  padding: 20px;
+  margin-bottom: 50px;
 }
 .developers__list {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
   width: 100%;
   list-style-type: none;
 }
