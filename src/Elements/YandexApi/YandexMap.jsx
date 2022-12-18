@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
-import s from "./YandexMap.modules.scss"
+import s from "./YandexMap.module.scss";
 import { COORDS } from './marksCoords';
 
-const AddresCol = ({ setActivePoint }) => {
+const AddresCol = ({ setActivePoint, activePoint }) => {
     return (
-        <ul>
+        <ul className={s.addressList}>
             {COORDS.map(person => {
                 return (
-                    <li key={person.id}>
-                        <h4>{person.owner.name}</h4>
+                    <li key={person.id} className={s.addresList__address}>
+                        <h4 className={s.address__name}>{person.owner.name}</h4>
                         <ul>
-                            {person.points.map(point => <li key={point.id} onClick={() => setActivePoint(point)}>{point.title}</li>)}
+                            {person.points.map(point => <li key={point.id} onClick={() => setActivePoint(point)} className={activePoint == point ? s.address__point + " " + s.address__point_active : s.address__point}>{point.title}</li>)}
                         </ul>
                     </li>)
             })}
@@ -35,7 +35,7 @@ export function YandexMap() {
         controls: [],
     };
     return (
-        <section>
+        <section className={s.devMap}>
             <YMaps className={s.blackWhite}>
                 <Map instanceRef={(ref) => {
                     if (ref) { mapRef.current = ref; }

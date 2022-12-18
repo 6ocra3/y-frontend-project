@@ -1,4 +1,4 @@
-import { MAKAR } from '../../static/bio/makar';
+import { MAKAR } from '../../static/bio/Makar';
 import { Grisha } from '../../static/bio/grisha';
 
 export const COORDS = [

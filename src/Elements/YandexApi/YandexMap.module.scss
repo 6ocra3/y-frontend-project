@@ -1,0 +1,32 @@
+.ymaps-2-1-79-map-copyrights-promo {
+    display: none;
+}
+
+.devMap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+ymaps:not(*[unselectable="on"]) {
+    border-radius: 10px;
+}
+
+.address__name {
+    font-size: 28px;
+    margin: 10px;
+    cursor: default;
+}
+
+.address__point {
+    color: #6b6b6b;
+    transition: 0.3s;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.address__point_active {
+    color: #ffffff;
+}
