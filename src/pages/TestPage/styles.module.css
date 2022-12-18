@@ -35,3 +35,10 @@
         background-color: #1a1e29;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .cityImage {
+        width: 300vw;
+        height: 300vh;
+    }
+}

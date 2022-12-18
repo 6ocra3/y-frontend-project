@@ -6,6 +6,9 @@
   width: 100vw;
   height: 30vh;
   margin-top: 100px;
+  @media screen and (max-width: 600px) {
+    height: 50vh;
+  }
 }
 
 .feedback__header {

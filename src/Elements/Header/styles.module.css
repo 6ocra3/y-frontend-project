@@ -14,7 +14,6 @@
     align-items: center;
     background-color: rgba(226, 234, 252, 0);
     padding: 30px;
-    position: fixed;
 }
 
 .hidden {
@@ -108,5 +107,11 @@
     .header__button_active {
         color: #e7e7e7;
         border-bottom: #e7e7e7 1px solid;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .header {
+        position: fixed;
     }
 }
