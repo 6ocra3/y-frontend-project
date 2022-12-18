@@ -16,6 +16,18 @@
     background-repeat: no-repeat;
 }
 
+.leavesImage {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 200%;
+    z-index: -3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../static/image/leaves.svg');
+    opacity: 0.5;
+}
+
 @media (prefers-color-scheme: light) {
     .cityImage {
         background-image: url('../../static/image/whiteCity.png');

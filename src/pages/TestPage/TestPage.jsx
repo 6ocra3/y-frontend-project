@@ -15,5 +15,6 @@ export const TestPage = () => {
         <DeveloperList />
         <Feedback setModalActive={setModalActive} />
         <Popover active={modalActive} setActive={setModalActive}/>
+        <div className={styles.leavesImage}></div>
     </div>
 }
