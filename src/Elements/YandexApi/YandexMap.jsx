@@ -4,7 +4,7 @@ import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 import s from "./YandexMap.modules.scss"
 import { COORDS } from './marksCoords';
 
-const AddresCol = ({ activePoint, setActivePoint }) => {
+const AddresCol = ({ setActivePoint }) => {
     return (
         <ul>
             {COORDS.map(person => {
