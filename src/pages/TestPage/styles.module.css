@@ -2,6 +2,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     /*background: #16161A;*/
+}
+
+.cityImage {
+    width: 100vw;
     height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -3;
+    background-size: contain;
+}
+
+@media (prefers-color-scheme: light) {
+    .cityImage {
+        background-image: url('../../static/image/whiteCity.png');
+    };
+    body {
+        color: #000000;
+        background-color: #ffffff;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .cityImage {
+        background-image: url('../../static/image/darkCity.png');
+    }
+    body {
+        color: #ffffff;
+        background-color: #1a1e29;
+    }
 }
