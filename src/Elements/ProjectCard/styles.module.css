@@ -1,5 +1,5 @@
 .root {
-    width: 45%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -44,8 +44,10 @@
 }
 
 .image {
-    width: min(616px, 100%);
-    height: min(440px, 71%);
+    /*width: min(616px, 100%);*/
+    /*height: min(440px, 71%);*/
+    width: 100%;
+    height: auto;
 }
 
 .description {

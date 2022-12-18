@@ -11,7 +11,7 @@ export const Header = () => {
             }
             >Первая страница</NavLink>
 
-            <NavLink to="/2" className={
+            <NavLink to="/projects_page" className={
                 ({isActive}) => isActive ? styles.header__button + " " + styles.header__button_active :
                     styles.header__button
             }
