@@ -1,6 +1,6 @@
 import { MAKAR } from './makarBio';
 import { VLAD } from './vlad';
-import { Grisha } from './grisha';
+import { GRISHA } from './grisha';
 import { DENIS } from './denis';
 
-export const devList = [MAKAR, VLAD, Grisha, DENIS];
+export const devList = [MAKAR, VLAD, GRISHA, DENIS];

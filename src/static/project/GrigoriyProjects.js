@@ -1,4 +1,4 @@
-import { Grisha } from "../bio/grisha";
+import { GRISHA } from "../bio/grisha";
 import { STACK } from "./stack";
 import messengerImage from "../image/messenger.png";
 import pymogusImage from "../image/pymogus.png";
@@ -13,7 +13,7 @@ export const GrigoriyProjects = [
         title: "Мессенджер",
         date: "13.11.2021",
         time: "15:11",
-        author: Grisha,
+        author: GRISHA,
         projectType: "Проект для Академии Яндекса",
         description: "Данный проект - это мессенджер, написанный на языке python, фреймворк PyQt5. Для обеспечения взаимодействия между устройствами мной был использован клиент-серверный вариант с применением библиотеки socket. Для цветового оформления интерфейса использовался css.",
         link: "https://github.com/JeeEssEm/messenger-pyqt5",
@@ -25,7 +25,7 @@ export const GrigoriyProjects = [
         title: "PyMogus",
         date: "17.01.2022",
         time: "20:06",
-        author: Grisha,
+        author: GRISHA,
         projectType: "Проект для Академии Яндекса",
         description: "Данный проект - это реплика популярной игры among us. Мы написали его на языке python, фреймворк pygame. Для поддержки сетевой игры мы использовали клиент-серверный вариант с использованием библиотеки socket.",
         link: "https://github.com/tizerr/PygameAmongUs",
@@ -37,7 +37,7 @@ export const GrigoriyProjects = [
         title: "PracticeHub",
         date: "25.04.2022",
         time: "12:04",
-        author: Grisha,
+        author: GRISHA,
         projectType: "Проект для Академии Яндекса",
         description: "Данный проект - попытка создания сайта с курсами для школы, на котором можно создать курс, записаться и пройти. На стороне frontend мы использовали html, css, и javascript, в частности JQuery. На стороне backend мы использовали язык python, фреймворк Flask и SQLAlchemy для установки ORM связи с базой данных sqlite",
         link: "https://github.com/tizerr/PracticeHub",
@@ -49,7 +49,7 @@ export const GrigoriyProjects = [
         title: "Mega map",
         date: "03.02.2022",
         time: "21:16",
-        author: Grisha,
+        author: GRISHA,
         projectType: "Пет проект",
         description: "Этот проект был создан для тренировки в разработке приложений с использованием фреймворка PyQt и api яндекс карт",
         link: "https://github.com/JeeEssEm/mega_map",
