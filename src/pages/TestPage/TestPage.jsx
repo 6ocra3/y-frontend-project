@@ -7,7 +7,7 @@ import { PromoBlock } from '../../components/PromoBlock/PromoBlock';
 import { YandexMap } from '../../Elements/YandexApi/YandexMap';
 import { ThemeSwitcher } from '../../Elements/ThemeSwitcher/ThemeSwitcher';
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 
 export const TestPage = ({theme, setTheme}) => {
