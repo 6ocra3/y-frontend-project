@@ -1,6 +1,7 @@
-import {Header} from "../Header/Header";
-import {Footer} from "../Footer/Footer";
+
 import s from './Layout.module.scss';
+import {Header} from "../Header";
+import {Footer} from "../Footer";
 
 export const Layout = ({theme, children}) => {
     return (

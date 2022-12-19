@@ -8,8 +8,7 @@ export function ProjectCard({ props }) {
         <section className={styles.root} >
             <a href={link} target="_blank" rel="noreferrer"
                 className={link ? "" : styles.disabled}>
-
-                <img src={image} alt="проект" className={styles.image} />
+                    <img src={image} alt="проект" className={styles.image}/>
             </a>
 
             <div className={styles.date}>

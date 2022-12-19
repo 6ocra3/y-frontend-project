@@ -1,5 +1,6 @@
-import { MAKAR } from '../../static/bio/Makar';
-import { Grisha } from '../../static/bio/grisha';
+
+import { MAKAR } from '../../static/bio/makar';
+import { GRISHA } from '../../static/bio/grisha';
 
 export const COORDS = [
   {
@@ -25,7 +26,7 @@ export const COORDS = [
     ],
   },
   {
-    owner: Grisha,
+    owner: GRISHA,
     points: [
       {
         id: 1004,
