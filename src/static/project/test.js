@@ -1,5 +1,5 @@
 import projectImg from './../image/image.png';
-import { MAKAR } from '../bio/makar';
+import { MAKAR } from '../bio/makarBio';
 import { STACK } from './stack';
 export const TestProject = {
   image: projectImg,
