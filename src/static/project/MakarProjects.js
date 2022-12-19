@@ -1,10 +1,10 @@
 import { MAKAR } from '../bio/makar';
-import metttime from '../image/metttime.png';
+import meettime from '../image/meettime.png';
 import { STACK } from './stack';
 export const MakarProjects = [
   {
     id: 101,
-    image: metttime,
+    image: meettime,
     title: 'MeetTime',
     date: '28.08.2022',
     time: '12:12:12',
@@ -17,7 +17,7 @@ export const MakarProjects = [
   },
   {
     id: 102,
-    image: metttime,
+    image: meettime,
     title: 'MeetTime',
     date: '28.08.2022',
     time: '12:12:12',
@@ -30,7 +30,7 @@ export const MakarProjects = [
   },
   {
     id: 103,
-    image: metttime,
+    image: meettime,
     title: 'MeetTime',
     date: '28.08.2022',
     time: '12:12:12',
