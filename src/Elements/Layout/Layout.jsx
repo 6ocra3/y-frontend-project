@@ -1,13 +1,13 @@
+
+import s from './Layout.module.scss';
 import {Header} from "../Header";
 import {Footer} from "../Footer";
-import styles from "./styles.module.css";
 
-export const Layout = (props) => {
-
+export const Layout = ({theme, children}) => {
     return (
-        <div>
-            <Header/>
-            <main className={styles.main}>{props.children}</main>
+        <div className={theme == 'light' ? s.layout + ' ' + s.layout_light : s.layout}>
+            <Header theme={theme}/>
+            <main>{children}</main>
             <Footer/>
         </div>
     )

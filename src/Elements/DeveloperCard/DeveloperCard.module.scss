@@ -84,3 +84,17 @@
     color: #e7e7e7;
   }
 }
+
+.developer_light {
+  color: #000000;
+  background-color: #ffffff;
+  & .githubIcon {
+    background-image: url('../../static/icons/ghDark.svg');
+  }
+  & .telegramIcon {
+    background-image: url('../../static/icons/tgDark.svg');
+  }
+  & .developer__bio {
+    color: #212530;
+  }
+}

@@ -1,3 +1,4 @@
+
 import { MAKAR } from '../../static/bio/makar';
 import { GRISHA } from '../../static/bio/grisha';
 
