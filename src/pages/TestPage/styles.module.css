@@ -8,11 +8,12 @@
 
 .cityImage {
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     position: absolute;
     top: 0;
     z-index: -3;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 @media (prefers-color-scheme: light) {
@@ -32,5 +33,12 @@
     body {
         color: #ffffff;
         background-color: #1a1e29;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cityImage {
+        width: 300vw;
+        height: 300vh;
     }
 }
