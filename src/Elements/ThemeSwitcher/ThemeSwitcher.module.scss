@@ -1,0 +1,46 @@
+.toggle {
+  position: fixed;
+  top: 30px;
+  right: 100px;
+	cursor: pointer;
+	display: inline-block;
+	z-index: 12;
+}
+
+.toggle__switch {
+	display: inline-block;
+	background: #ebebeb;
+	border-radius: 16px;
+	width: 58px;
+	height: 32px;
+	position: relative;
+	vertical-align: middle;
+	transition: 0.5s;
+
+	&:before,
+	&:after {
+		content: '';
+	}
+
+	&:before {
+		display: block;
+		background: #1b1b1b;
+		border-radius: 50%;
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		transition: 0.5s;
+	}
+
+	&.checked {
+		background: #1b1b1b;
+
+		&:before {
+      background: #ffffff;
+			left: 30px;
+      transition: 0.5s;
+		}
+	}
+}

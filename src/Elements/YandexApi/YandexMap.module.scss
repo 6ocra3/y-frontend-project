@@ -8,6 +8,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
+    z-index: 10;
 }
 
 ymaps:not(*[unselectable="on"]) {
@@ -32,6 +33,14 @@ ymaps:not(*[unselectable="on"]) {
         color: #000000;
     }
     @media (prefers-color-scheme: dark) {
-        color: #ffffff;
+        color: #b3b3b3;
     }
+}
+
+.address__points {
+    color: #ffffff;
+}
+
+.address__points_light {
+    color: #000000;
 }

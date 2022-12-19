@@ -34,15 +34,15 @@
         }
     }
 
+    &.light {
+        background-color: #1C2432;
+        color: #ffffff;
+        transition: 0.2s;
+    }
+
     &.ghost {
         background: none;
-        @media (prefers-color-scheme: light) {
-            color: #1C2432;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            color: #ffffff;
-        }
+        color: #7e7e7e;
     }
 
 }

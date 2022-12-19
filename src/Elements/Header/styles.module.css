@@ -14,6 +14,7 @@
     align-items: center;
     background-color: rgba(226, 234, 252, 0);
     padding: 30px;
+    z-index: 11;
 }
 
 .hidden {
@@ -114,4 +115,21 @@
     .header {
         position: fixed;
     }
+}
+
+.burger__layer_light {
+    background-color: #16161A;
+}
+
+.header__button_light {
+    text-decoration: none;
+    margin-left: 10px;
+    transition: 0.3s;
+    user-select: none;
+    color: #16161A;
+}
+
+.header__button_active_light {
+    color: #16161A;
+    border-bottom: #16161A 1px solid;
 }

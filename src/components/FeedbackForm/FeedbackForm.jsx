@@ -6,7 +6,7 @@ import { useState } from 'react';
 import axios from 'axios';
 const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu
 
-export const FeedbackForm = ({ setActive }) => {
+export const FeedbackForm = ({ setActive, theme }) => {
     const [loading, setLoading] = useState(false)
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -42,7 +42,7 @@ export const FeedbackForm = ({ setActive }) => {
     };
     return (
         loading ? <Loader /> :
-        <form className={styles.form} onClick={e => e.stopPropagation()} onSubmit={e => e.preventDefault()}><div className={styles.form__close}>
+        <form className={theme == 'light' ? styles.form + " " + styles.form_light : styles.form} onClick={e => e.stopPropagation()} onSubmit={e => e.preventDefault()}><div className={styles.form__close}>
             <Button type="ghost" onClick={() => setActive(false)}>
                 <FeatherIcon icon="x" />
             </Button>
@@ -58,7 +58,7 @@ export const FeedbackForm = ({ setActive }) => {
             </label><label className={styles.form__agreement}>
                 <input type="checkbox" className={styles.form__checkbox} required onChange={()=> setCheckbox(!checkbox)} />
                     Даю согласие на обработку персональных данных
-                </label><Button type="dark" onClick={sendForm}>Отправить</Button>
+                </label><Button type={theme == 'light' ? "light" : "dark"} onClick={sendForm}>Отправить</Button>
             </form>
     )
 };

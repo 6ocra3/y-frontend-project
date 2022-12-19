@@ -5,6 +5,7 @@ export function Button(props) {
     const styles = {
         "bright": s.brightBlue,
         "dark": s.darkBlue,
+        "light": s.light,
         "ghost": s.ghost,
     }
     const elemStyles = modificateStyles ? modificateStyles.concat([s.button, type && styles[type]]) : [s.button, type && styles[type]]

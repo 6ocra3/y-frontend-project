@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 import {FeedbackForm} from "../../components/FeedbackForm";
 
-export const Popover = ({active, setActive}) => {
+export const Popover = ({active, setActive, theme}) => {
     if (active) {
         document.body.style.overflow = "hidden"
     }
@@ -11,10 +11,10 @@ export const Popover = ({active, setActive}) => {
     }
 
     return (
-        <div className={active ? styles.modal + " " + styles["modal-active"] : styles.modal}
+        <div className={active ? styles.modal + " " + styles["modal-active"]  : styles.modal}
              onClick={() => setActive(false)}
         >
-            <FeedbackForm setActive={setActive}/>
+            <FeedbackForm theme={theme} setActive={setActive}/>
         </div>
     )
 }
