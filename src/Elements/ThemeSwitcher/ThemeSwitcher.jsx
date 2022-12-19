@@ -6,12 +6,24 @@ export const ThemeSwitcher = ({theme, setTheme}) => {
   useEffect(() => {
     let th = localStorage.getItem('th');
     if (th == null) {
-      localStorage.setItem('th', 'dark')
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        localStorage.setItem('th', 'light')
+        document.body.style.backgroundColor = '#ffffff'
+        setTheme('light')
+      } else {
+        localStorage.setItem('th', 'dark')
+        document.body.style.backgroundColor = '#1a1e29'
+        setTheme('dark')
+      }
     } else {
       if (th == 'dark') {
+        document.body.style.backgroundColor = '#1a1e29'
         setTheme('dark')
+        localStorage.setItem('th', 'dark')
       } else if (th == 'light') {
+        document.body.style.backgroundColor = '#ffffff'
         setTheme('light')
+        localStorage.setItem('th', 'light')
       }
     }
   })
@@ -19,9 +31,11 @@ export const ThemeSwitcher = ({theme, setTheme}) => {
   function switchTheme() {
     let th = localStorage.getItem('th');
     if (th == 'dark') {
+      document.body.style.backgroundColor = '#ffffff'
       setTheme('light')
       localStorage.setItem('th', 'light')
     } else if (th == 'light') {
+      document.body.style.backgroundColor = '#1a1e29'
       setTheme('dark')
       localStorage.setItem('th', 'dark')
     }
