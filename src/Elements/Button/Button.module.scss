@@ -38,6 +38,11 @@
         background-color: #1C2432;
         color: #ffffff;
         transition: 0.2s;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0);
+            color: #000000;
+            transition: 0.2s;
+        }
     }
 
     &.ghost {
