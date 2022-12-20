@@ -4,21 +4,21 @@
   width: 100vw;
   height: 200vh;
   background-size: contain;
-  background-image: url('../../static/image/darkProjectsCity.png');
+  background-image: url('../../static/image/darkProjectsCity.webp');
   background-repeat: no-repeat;
 }
 
 @media (prefers-color-scheme: light) {
   .projectCityImage {
-    background-image: url('../../static/image/whiteProjectsCity.png');
+    background-image: url('../../static/image/whiteProjectsCity.webp');
   }
 }
 @media (prefers-color-scheme: dark) {
   .projectCityImage {
-    background-image: url('../../static/image/darkProjectsCity.png');
+    background-image: url('../../static/image/darkProjectsCity.webp');
   }
 }
 
 .projectCityImage_light {
-  background-image: url('../../static/image/whiteProjectsCity.png');
+  background-image: url('../../static/image/whiteProjectsCity.webp');
 }

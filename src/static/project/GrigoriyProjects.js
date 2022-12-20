@@ -1,9 +1,9 @@
 import { GRISHA } from "../bio/grisha";
 import { STACK } from "./stack";
-import messengerImage from "../image/messenger.png";
-import pymogusImage from "../image/pymogus.png";
-import practicehubImage from "../image/practicehub.png";
-import megamapImage from "../image/mega_map.png"
+import messengerImage from "../image/messenger.webp";
+import pymogusImage from "../image/pymogus.webp";
+import practicehubImage from "../image/practicehub.webp";
+import megamapImage from "../image/mega_map.webp"
 
 
 export const GrigoriyProjects = [

@@ -1,4 +1,4 @@
-import vladImage from './../image/vlad.jpg';
+import vladImage from './../image/vlad.webp';
 
 export const VLAD = {
   id: 15,

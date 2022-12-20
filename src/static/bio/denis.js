@@ -1,4 +1,4 @@
-import denisImage from './../image/denis.png';
+import denisImage from './../image/denis.webp';
 
 export const DENIS = {
   id: 11,

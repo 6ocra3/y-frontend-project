@@ -1,8 +1,8 @@
 import { VLAD } from '../bio/vlad';
 import { STACK } from './stack';
-import timeTrackerImage from '../image/time-tracker.png';
-import libraryImage from '../image/library.png';
-import rogueImage from '../image/rogue.png';
+import timeTrackerImage from '../image/time-tracker.webp';
+import libraryImage from '../image/library.webp';
+import rogueImage from '../image/rogue.webp';
 
 export const VladProjects = [
   {

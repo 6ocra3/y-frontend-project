@@ -1,5 +1,5 @@
 import { MAKAR } from '../bio/makarBio';
-import metttime from '../image/meettime.png';
+import metttime from '../image/meettime.webp';
 import { STACK } from './stack';
 export const MakarProjects = [
   {

@@ -1,4 +1,4 @@
-import projectImg from './../image/image.png';
+import projectImg from './../image/image.webp';
 import { MAKAR } from '../bio/makarBio';
 import { STACK } from './stack';
 export const TestProject = {

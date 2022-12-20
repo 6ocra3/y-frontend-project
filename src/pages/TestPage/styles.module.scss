@@ -30,7 +30,7 @@
 
 @media (prefers-color-scheme: light) {
     .cityImage {
-        background-image: url('../../static/image/whiteCity.png');
+        background-image: url('../../static/image/whiteCity.webp');
     };
     body {
         color: #000000;
@@ -40,7 +40,7 @@
 
 @media (prefers-color-scheme: dark) {
     .cityImage {
-        background-image: url('../../static/image/darkCity.png');
+        background-image: url('../../static/image/darkCity.webp');
     }
     body {
         color: #ffffff;
@@ -56,5 +56,5 @@
 }
 
 .cityImage_light {
-    background-image: url('../../static/image/whiteCity.png');
+    background-image: url('../../static/image/whiteCity.webp');
 }

@@ -1,6 +1,7 @@
-import makarImage from './../image/makar.jpg';
+import makarImage from './../image/makar.webp';
 
 export const MAKAR = {
+  id: 16,
   image: makarImage,
   name: 'Кряжев Макар',
   github: 'https://github.com/6ocra3',
