@@ -10,7 +10,7 @@ import { ThemeSwitcher } from '../../Elements/ThemeSwitcher/ThemeSwitcher';
 import styles from "./styles.module.scss";
 
 
-export const TestPage = ({theme, setTheme}) => {
+export const MainPage = ({ theme, setTheme }) => {
     const [modalActive, setModalActive] = useState(false);
 
     return <div className={theme == 'light' ? styles.main + " " + styles.light : styles.main}>
@@ -19,8 +19,8 @@ export const TestPage = ({theme, setTheme}) => {
         <PromoBlock />
         <DeveloperList theme={theme} />
         <Feedback theme={theme} setModalActive={setModalActive} />
-        <Popover theme={theme} active={modalActive} setActive={setModalActive}/>
-        <YandexMap theme={theme}/>
+        <Popover theme={theme} active={modalActive} setActive={setModalActive} />
+        <YandexMap theme={theme} />
         <div className={styles.leavesImage}></div>
     </div>
 }

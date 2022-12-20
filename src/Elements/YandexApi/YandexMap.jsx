@@ -20,7 +20,7 @@ const AddresCol = ({ setActivePoint, activePoint, theme }) => {
 
 }
 
-export function YandexMap({theme}) {
+export function YandexMap({ theme }) {
     const [activePoint, setActivePoint] = useState(COORDS[0].points[0])
     const onlyCoords = COORDS.reduce((pre, cur) => pre.concat(cur.points), [])
     const mapRef = {}
@@ -40,7 +40,7 @@ export function YandexMap({theme}) {
                 <Map instanceRef={(ref) => {
                     if (ref) { mapRef.current = ref; }
                 }} options={{ copyrightLogoVisible: false, copyrightProvidersVisible: false, yandexMapAutoSwitch: false, copyrightUaVisible: false }} defaultState={defaultState} style={{ filter: "grayscale(1)", width: "800px", height: "600px" }} modules={["control.ZoomControl", "control.FullscreenControl"]}>
-                    {onlyCoords.map(coord => <Placemark key={coord.id} geometry={coord.coordinates} options={{ iconLayout: "default#image", iconImageHref: coord == activePoint ? "https://cdn-icons-png.flaticon.com/512/2711/2711637.webp" : "https://cdn-icons-png.flaticon.com/512/1008/1008001.webp", iconImageSize: coord == activePoint ? [30, 30] : [20, 20] }} />)}
+                    {onlyCoords.map(coord => <Placemark key={coord.id} geometry={coord.coordinates} options={{ iconLayout: "default#image", iconImageHref: coord == activePoint ? "activeMark.svg" : "mark.svg", iconImageSize: coord == activePoint ? [30, 30] : [20, 20] }} />)}
                 </Map>
             </YMaps>
             <AddresCol theme={theme} activePoint={activePoint} setActivePoint={setActivePoint} />

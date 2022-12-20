@@ -27,8 +27,7 @@ export const DenisProjects = [
     time: '12:53:42',
     author: DENIS,
     projectType: 'Pet Project',
-    description:
-      'Сайт вымышленной кофейни, сделанный за 5 дней. Красивое.',
+    description: 'Сайт вымышленной кофейни, сделанный за 5 дней. Красивое.',
     link: 'https://github.com/sherstnew/coffish',
     technologyStack: [STACK.HTML, STACK.SCSS],
   },
