@@ -1,4 +1,4 @@
-import grishaImg from './../image/morozoff.jpg';
+import grishaImg from './../image/morozoff.webp';
 
 export const GRISHA = {
   id: 12,

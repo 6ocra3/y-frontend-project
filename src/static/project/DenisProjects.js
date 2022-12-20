@@ -1,9 +1,9 @@
 import { DENIS } from '../bio/denis';
 import { STACK } from './stack';
 
-import catImg from '../image/running_cat.png';
-import coffishImage from '../image/coffish.png';
-import schoolImage from '../image/2083.png';
+import catImg from '../image/running_cat.webp';
+import coffishImage from '../image/coffish.webp';
+import schoolImage from '../image/2083.webp';
 
 export const DenisProjects = [
   {

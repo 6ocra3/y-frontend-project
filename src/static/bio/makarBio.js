@@ -1,4 +1,4 @@
-import makarImage from './../image/makar.jpg';
+import makarImage from './../image/makar.webp';
 
 export const MAKAR = {
   id: 16,
