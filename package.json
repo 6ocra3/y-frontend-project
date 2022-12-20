@@ -28,7 +28,8 @@
     "precommit": "lint-staged",
     "lint:fix": "eslint --fix",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "server": "node ./src/server/server.js"
   },
   "lint-staged": {
     "*.{js, jsx}": [
