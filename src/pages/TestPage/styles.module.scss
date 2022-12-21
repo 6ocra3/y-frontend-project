@@ -5,6 +5,9 @@
     flex-wrap: wrap;
     /*background: #16161A;*/
     width: 100vw;
+    @media screen and (max-width: 600px) {
+        margin-top: 100px;
+    }
 }
 
 .cityImage {
