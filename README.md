@@ -56,7 +56,7 @@ Install dependencies
 ## Авторы:
 
 - [@6ocra3](https://github.com/6ocra3)
-- [@sherstnew](https://www.github.com/octokatherine)
-- [@JeeEssEm](https://www.github.com/octokatherine)
+- [@sherstnew](https://www.github.com/sherstnew)
+- [@JeeEssEm](https://www.github.com/JeeEssEm)
 - [@leonorino](https://github.com/leonorino)
 
