@@ -6,7 +6,7 @@ export const ProjectsPage = ({theme}) => {
 
     return (
         <div>
-            <div className={theme == 'light' ? styles.projectCityImage + " " + styles.projectCityImage_light : styles.projectCityImage}></div>
+            <div className={theme === 'light' ? styles.projectCityImage + " " + styles.projectCityImage_light : styles.projectCityImage}></div>
             <ProjectsList theme={theme} projects={ProjectsListData}/>
         </div>
     )
