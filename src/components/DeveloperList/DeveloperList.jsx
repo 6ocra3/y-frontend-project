@@ -1,4 +1,4 @@
-import { DeveloperCard } from '../DeveloperCard/DeveloperCard';
+import { DeveloperCard } from '../../Elements/DeveloperCard';
 import s from './DeveloperList.module.scss';
 
 import { devList } from '../../static/bio/devList';
