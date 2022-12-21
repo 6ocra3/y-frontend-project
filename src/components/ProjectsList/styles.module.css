@@ -51,5 +51,7 @@
     .projects__search-input {
         width: 100%;
     }
-
+    .projects__header {
+        margin-top: 200px;
+    }
 }
