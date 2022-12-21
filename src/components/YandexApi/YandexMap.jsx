@@ -11,8 +11,8 @@ const AddresCol = ({ setActivePoint, activePoint, theme }) => {
                 return (
                     <li key={person.id} className={s.addresList__address}>
                         <h4 className={s.address__name}>{person.owner.name}</h4>
-                        <ul className={theme == 'light' ? s.address__points + " " + s.address__points_light : s.address__point}>
-                            {person.points.map(point => <li key={point.id} onClick={() => setActivePoint(point)} className={activePoint == point ? s.address__point + " " + s.address__point_active : s.address__point}>{point.title}</li>)}
+                        <ul className={theme === 'light' ? s.address__points + " " + s.address__points_light : s.address__point}>
+                            {person.points.map(point => <li key={point.id} onClick={() => setActivePoint(point)} className={activePoint === point ? s.address__point + " " + s.address__point_active : s.address__point}>{point.title}</li>)}
                         </ul>
                     </li>)
             })}
@@ -40,7 +40,7 @@ export function YandexMap({theme}) {
                 <Map instanceRef={(ref) => {
                     if (ref) { mapRef.current = ref; }
                 }} options={{ copyrightLogoVisible: false, copyrightProvidersVisible: false, yandexMapAutoSwitch: false, copyrightUaVisible: false }} defaultState={defaultState} style={{ filter: "grayscale(1)", width: "800px", height: "600px" }} modules={["control.ZoomControl", "control.FullscreenControl"]}>
-                    {onlyCoords.map(coord => <Placemark key={coord.id} geometry={coord.coordinates} options={{ iconLayout: "default#image", iconImageHref: coord == activePoint ? "https://cdn-icons-png.flaticon.com/512/2711/2711637.webp" : "https://cdn-icons-png.flaticon.com/512/1008/1008001.webp", iconImageSize: coord == activePoint ? [30, 30] : [20, 20] }} />)}
+                    {onlyCoords.map(coord => <Placemark key={coord.id} geometry={coord.coordinates} options={{ iconLayout: "default#image", iconImageHref: coord == activePoint ? "activeMark.svg" : "mark.svg", iconImageSize: coord == activePoint ? [40, 40] : [30, 30] }} />)}
                 </Map>
             </YMaps>
             <AddresCol theme={theme} activePoint={activePoint} setActivePoint={setActivePoint} />
