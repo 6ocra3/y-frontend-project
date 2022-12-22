@@ -39,7 +39,7 @@ export const ProjectsList = ({ projects, theme }) => {
                     filteredProjects.slice(0, cnt).map((project) => <li key={project.id} className={styles.projects__element}><ProjectCard ref={cardRef} theme={theme} props={project} /></li>)
                 }
             </ul>
-            {cnt < filteredProjects.length && <button onClick={incBtn}>Увеличить количество проектов</button>}
+            {cnt < filteredProjects.length && <button className={theme == 'light' ? styles.projects__more + " " + styles.projects__more_l : styles.projects__more} type='button' aria-label='Увеличить количество проектов' onClick={incBtn}>Увеличить количество проектов</button>}
         </section >
     )
 }

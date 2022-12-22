@@ -3,7 +3,7 @@ import { useState } from "react";
 import { DeveloperList } from '../../components/DeveloperList';
 import { Popover } from "../../Elements/Popover";
 import { Feedback } from '../../components/Feedback';
-import { PromoBlock } from '../../components/PromoBlock';
+import { PromoBlock } from '../../components/PromoBlock/PromoBlock';
 import { YandexMap } from '../../components/YandexApi/YandexMap';
 
 import styles from "./styles.module.scss";
