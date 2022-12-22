@@ -5,6 +5,9 @@
   color: rgb(250, 250, 250);
   background-color: #1a1e29;
   z-index: -5;
+  @media screen and (max-width: 600px) {
+    max-height: 250vh;
+  }
 }
 
 .layout_light {

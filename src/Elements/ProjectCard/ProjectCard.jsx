@@ -6,7 +6,7 @@ export function ProjectCard({ props, theme }) {
 
     return (
         <section className={theme == 'light' ? styles.root + "" + styles.root_light : styles.root} >
-            <a href={link} target="_blank" rel="noreferrer"
+            <a href={link} target="_blank" rel="noopener noreferrer"
                 className={link ? "" : styles.disabled}>
                     <img src={image} alt="проект" className={styles.image}/>
             </a>

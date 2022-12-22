@@ -11,30 +11,48 @@
 
 ![Contributors](https://img.shields.io/github/contributors/6ocra3/y-frontend-project)
 
-
+## Демо (без бэкенд-сервера):
+#### https://earnest-choux-d7a5a9.netlify.app/
 ## Преимущества:
 
 - Темная / светлая тема и ее переключение
+
 - Адаптивность
+    - Сайт адаптирован под экраны мобильных телефонов, компьтеров, ноутбуков.
+
 - Оптимизированность
+    - Все картинки представлены в формате WebP, что позволяит ускорить их загрузку.
+
 - Ну и конечно же самые прекрасные фотки самых прекрасных разработчиков)
+
+- При разработке были использованы:
+    - ESLint
+    - Prettier
+    - StoryBook
+
+- Из бонусных заданий были выполнены:
+    - Preview Loader (при отправке формы)
+    - Анимация бургерного меню
+    - Светлая и темная тема, переключение между ними
+    - Форма обратной связи (необходимо запустить бэкенд-сервер, инструкции снизу)
+    - Карта с отмеченными точками
 
 
 ## Запустить локально:
 
-Клонировать репозиторий
+Клонировать репозиторий:
 
 ```bash
   git clone https://github.com/6ocra3/y-frontend-project
 ```
 
-Go to the project directory
+Перейти в папку проекта:
 
 ```bash
-  cd my-project
+  cd y-frontend-project
 ```
 
-Install dependencies
+Установить зависимости:
 
 ```bash
   npm install
@@ -49,6 +67,7 @@ Install dependencies
 Запустить бэкенд-сервер:
 
 ```bash
+  cd src
   npm run server
 ```
 
@@ -56,7 +75,7 @@ Install dependencies
 ## Авторы:
 
 - [@6ocra3](https://github.com/6ocra3)
-- [@sherstnew](https://www.github.com/octokatherine)
-- [@JeeEssEm](https://www.github.com/octokatherine)
+- [@sherstnew](https://www.github.com/sherstnew)
+- [@JeeEssEm](https://www.github.com/JeeEssEm)
 - [@leonorino](https://github.com/leonorino)
 

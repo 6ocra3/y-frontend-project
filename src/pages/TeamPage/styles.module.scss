@@ -4,6 +4,10 @@
     align-items: center;
     flex-wrap: wrap;
     /*background: #16161A;*/
+    width: 100vw;
+    @media screen and (max-width: 600px) {
+        margin-top: 100px;
+    }
 }
 
 .cityImage {
@@ -50,8 +54,7 @@
 
 @media screen and (max-width: 600px) {
     .cityImage {
-        width: 300vw;
-        height: 300vh;
+        width: 100vw;
     }
 }
 
