@@ -18,6 +18,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;
+    background-image: url('../../static/image/darkCity.webp');
 }
 
 .leavesImage {
@@ -33,9 +34,9 @@
 }
 
 @media (prefers-color-scheme: light) {
-    .cityImage {
-        background-image: url('../../static/image/whiteCity.webp');
-    };
+    // .cityImage {
+    //     background-image: url('../../static/image/whiteCity.webp');
+    // };
     body {
         color: #000000;
         background-color: #ffffff;
@@ -43,9 +44,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .cityImage {
-        background-image: url('../../static/image/darkCity.webp');
-    }
+    // .cityImage {
+    //     background-image: url('../../static/image/darkCity.webp');
+    // }
     body {
         color: #ffffff;
         background-color: #1a1e29;
