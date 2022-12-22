@@ -40,7 +40,7 @@ export const COORDS = [
         zoom: 18,
       },
       {
-        id: 1005,
+        id: 1006,
         title: 'парк Дубки',
         coordinates: [55.82041, 37.566661],
         zoom: 18,
