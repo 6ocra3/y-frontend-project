@@ -1,3 +1,5 @@
+require('dotenv').config()
+const proccess = require('process')
 const nodemailer = require('nodemailer')
 const express = require('express')
 const cors = require('cors')
@@ -14,8 +16,8 @@ app.post('/form', async (req, res) => {
     port: 465,
     secure: true,
     auth: {
-      user: 'redisk.sherstnev@mail.ru',
-      pass: 'DZzPpG3DAN9GyJWvuCYc',
+      user: proccess.env.MAILUSER,
+      pass: proccess.env.MAILPASSWORD,
     },
   })
 
