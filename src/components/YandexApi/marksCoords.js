@@ -1,5 +1,6 @@
 import { MAKAR } from '../../static/bio/makarBio';
 import { GRISHA } from '../../static/bio/grisha';
+import { DENIS } from '../../static/bio/denis';
 
 export const COORDS = [
   {
@@ -43,6 +44,23 @@ export const COORDS = [
         id: 1005,
         title: 'парк Дубки',
         coordinates: [55.82041, 37.566661],
+        zoom: 18,
+      },
+    ],
+  },
+  {
+    owner: DENIS,
+    points: [
+      {
+        id: 1010,
+        title: 'Курский вокзал',
+        coordinates: [55.755868, 37.662657],
+        zoom: 18,
+      },
+      {
+        id: 1011,
+        title: 'метро Славянский бульвар',
+        coordinates: [55.729838, 37.474339],
         zoom: 18,
       },
     ],
