@@ -43,7 +43,7 @@ export function YandexMap({theme}) {
                     {onlyCoords.map(coord => <Placemark key={coord.id} geometry={coord.coordinates} options={{ iconLayout: "default#image", iconImageHref: coord == activePoint ? "activeMark.svg" : "mark.svg", iconImageSize: coord == activePoint ? [40, 40] : [30, 30] }} />)}
                 </Map>
             </YMaps>
-            <AddresCol theme={theme} activePoint={activePoint} setActivePoint={setActivePoint} key={12}/>
+            <AddresCol theme={theme} activePoint={activePoint} setActivePoint={setActivePoint}/>
         </section>
     );
 }
