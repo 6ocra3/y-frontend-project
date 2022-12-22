@@ -1,6 +1,7 @@
 import { MAKAR } from '../../static/bio/makarBio';
 import { GRISHA } from '../../static/bio/grisha';
 import { DENIS } from '../../static/bio/denis';
+import { VLAD } from '../../static/bio/vlad';
 
 export const COORDS = [
   {
@@ -61,6 +62,29 @@ export const COORDS = [
         id: 1011,
         title: 'метро Славянский бульвар',
         coordinates: [55.729838, 37.474339],
+        zoom: 18,
+      },
+    ],
+  },
+  {
+    owner: VLAD,
+    points: [
+      {
+        id: 1021,
+        title: 'Батурина, 5Д',
+        coordinates: [56.036875, 92.905132],
+        zoom: 18,
+      },
+      {
+        id: 1022,
+        title: 'Физико-математическая школа СФУ',
+        coordinates: [55.995523, 92.795538],
+        zoom: 18,
+      },
+      {
+        id: 1023,
+        title: 'Эко-парк Гремячая Грива',
+        coordinates: [56.002596, 92.764493],
         zoom: 18,
       },
     ],
