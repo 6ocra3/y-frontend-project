@@ -10,6 +10,6 @@ export function Button(props) {
     }
     const elemStyles = modificateStyles ? modificateStyles.concat([s.button, type && styles[type]]) : [s.button, type && styles[type]]
     return (
-        <button className={elemStyles.join(" ")} onClick={onClick} disabled={disable || false} {...restProps}>{children}</button>
+        <button type='button' aria-label='Кнопка' className={elemStyles.join(" ")} onClick={onClick} disabled={disable || false} {...restProps}>{children}</button>
     )
 }
